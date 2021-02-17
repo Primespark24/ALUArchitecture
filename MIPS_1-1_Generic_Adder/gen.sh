@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/C/Xilinx/Vivado/2020.1/bin/vivado -mode batch -source ./setup_project.tcl
+/C/Xilinx/Vivado/2019.1/bin/vivado -mode batch -source ./setup_project.tcl

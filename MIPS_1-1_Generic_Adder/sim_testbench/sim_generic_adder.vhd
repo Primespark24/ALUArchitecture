@@ -53,13 +53,13 @@ BEGIN
           -- TODO: Complete the following VHDL code
           ---------------------------------------------------------
           -- Convert variable i to 9 bit std logic vector and connect the resulting signal to abc
-          abc <=           -- todo complete this statement
+          abc <= STD_LOGIC_VECTOR(to_unsigned(i,9));          -- todo complete this statement
           -- Connect bit 0 of abc to carry_in_sim 
-          carry_in_sim <=  -- todo complete this statement
+          carry_in_sim <= abc(0);  -- todo complete this statement
           -- Connect bits 1,2,3,4 of abc to b_sim
-          b_sim <=         -- todo complete this statement
+          b_sim <= abc(1 to 4);       -- todo complete this statement
           -- Connect bits 5,6,7,8 of abc to a_sim
-          a_sim <=         -- todo complete this statement
+          a_sim <= abc(5 to 8);        -- todo complete this statement
 
           wait for 10 ns;
 
