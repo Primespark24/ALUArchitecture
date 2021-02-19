@@ -12,19 +12,19 @@ The following VHDL code was originally given on Wikipedia. Some modifications we
 3.	How many resources of the FPGA  (e.g. slice LUTs, Slices, LUT as logic, Bonded IOBs) are used in the textbook's ALU design?	 To find this for your project, under the Implementation menu, click on "Open Synthezied Design". After this opens, from the main _Reports_ menu at the top of Vivado, select the "Report Utilization..." option. YOu will see four columns. Put your answers from each of these columns in the box below where indicated:
      ```
           Put your answers in the areas indicated...
-          Slice LUTs used (out of 20800 total): 
-          Slices used (out of 8150): 
-          LUT as Logic (out of 20800) : 
-          Bonded IOBs use (out of 106): 
+          Slice LUTs used (out of 20800 total): 12
+          Slices used (out of 8150): 4
+          LUT as Logic (out of 20800) : 12 
+          Bonded IOBs use (out of 106): 39
      ```				
 4.	This ALU has 7 instructions. What is the ratio of slices to instructions? (slices / instruction)
      ```
-          replace this line with your answer.
+          4 to 7, slices to instructions
      ```	
 5. Which of the two ALUs (textbook or wikipedia) is more efficient in terms of resources used or are they the same? Explain any differences or similarities you find.
 
      ```
-          replace this line with your answer.
+          The textbook is more efficent in its use of resources used as it uses less LUT's and slices. But the IOB were close to the same in both of them
      ```	
 
 6. Now, program the BASYS 3 board using the bitstream generated from this project. Set the switches as neccessary so that the  _a_ input contains 3 and the _b_ input contains 1. Set the switches so that the ALU will compute the add function. What LEDs on the board should light up? Do they light up correctly? Why or why not? Put your answers in the box below:	

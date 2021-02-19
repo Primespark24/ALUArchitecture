@@ -67,12 +67,14 @@ BEGIN
           -- TODO: do this by computing what each value should be and comparing
           -- TODO: to the y_sim output value from the ALU. Look at the MIPS_1-1
           -- TODO: simulation for an example verification
+          alu_test := ("0" & a_sim) + ("0" & b_sim) + ("0000" & function_bits_sim);
           -- TODO: Currently this VHDL reports values of all ALU computations
           -- TODO: only report and output if the alu computation is not correct.
-          report "a: " & to_string(a_sim) & " b: " & to_string(b_sim);
-          report "f: " & to_string(function_bits_sim);
-          report "y: " & to_string(y_sim);
-
+          if (y_sim) /= alu_test then
+            report "a: " & to_string(a_sim) & " b: " & to_string(b_sim);
+            report "f: " & to_string(function_bits_sim);
+            report "y: " & to_string(y_sim);
+          end if;
       end loop;
    end process;
 END behavioral;

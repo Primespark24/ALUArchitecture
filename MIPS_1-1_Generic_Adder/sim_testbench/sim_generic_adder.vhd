@@ -57,9 +57,9 @@ BEGIN
           -- Connect bit 0 of abc to carry_in_sim 
           carry_in_sim <= abc(0);  -- todo complete this statement
           -- Connect bits 1,2,3,4 of abc to b_sim
-          b_sim <= abc(1 to 4);       -- todo complete this statement
+          b_sim <= abc(4 downto 1);       -- todo complete this statement
           -- Connect bits 5,6,7,8 of abc to a_sim
-          a_sim <= abc(5 to 8);        -- todo complete this statement
+          a_sim <= abc(8 downto 5);        -- todo complete this statement
 
           wait for 10 ns;
 

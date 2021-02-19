@@ -10,18 +10,20 @@ The following VHDL code implements a generic N bit ALU from your textbook. Notic
 2. Unfortunately, the simulation code (sim_testbench/sim_textbook_alu.vhd) is not completed and you need to complete the simulation code to verify the processor. The test bench code should check all possible combinations of the 4-bit inputs a and b and the 1 carry input. After you fix the test bench code, and verify the processor, go ahead with the next step. Please note. The top level hardware code (alu_textbook_board_top.vhd) is complete and _will work correctly_ once it has been generated and the bitstream sent to the board. 
     
 3.	What is a Slice or LUT?  Quickly read about an Artix 7 FPGA slice starting on page 18 of the following document (don’t spend a huge amount of time here):  https://www.xilinx.com/support/documentation/user_guides/ug474_7Series_CLB.pdf 
+    A slice is a group of hardware that provides logic, arithmetic and ROM Functions.
+    A LUT or Look Up Table is an object that acts like a small Ram chip and allows for fast lookup of items needed by the FPGA
 
 4.	How many resources of the FPGA  (e.g. slice LUTs, Slices, LUT as logic, Bonded IOBs) are used in the textbook's ALU design?	 To find this for your project, under the Implementation menu, click on "Open Synthezied Design". After this opens, from the main _Reports_ menu at the top of Vivado, select the "Report Utilization..." option. You will see four columns. Put your answers from each of these columns in the box below where indicated:
     ```
         Put your answers in the areas indicated...
-        Slice LUTs used (out of 20800 total):  
-        Slices used (out of 8150): 
-        LUT as Logic (out of 20800) : 
-        Bonded IOBs use (out of 106): 
+        Slice LUTs used (out of 20800 total): 4  
+        Slices used (out of 8150): 2
+        LUT as Logic (out of 20800) : 4 
+        Bonded IOBs use (out of 106): 37
     ```							 	
 5.	This ALU has 7 instructions. What is the ratio of slices to instructions? (slices / instruction)
     ```
-        replace this line with your answer.
+        2 to 7, slices to instructions
     ```	
 6. Now, program the BASYS 3 board using the bitstream generated from this project. Set the switches as neccessary so that the  _a_ input to the alu contains 3 and the _b_ input contains 1. Set the switches so that the ALU will compute the add function (what does the function input require in this case?). What LEDs on the board should light up? Do they light up correctly? Why or why not? Put your answers in the box below
     ```
