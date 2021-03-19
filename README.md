@@ -10,10 +10,10 @@ The MIPS_1-1 through MIPS_1-3 subprojects are all located in this folder. You wi
 ### Grade Break Down
 | Part                             |   | Points  |
 |----------------------------------|---|---------|
-| MIPS_1-1 - Generic Adder Example |   | 10 pts  |    
-| MIPS_1-2 - Textbook ALU          |   | 20 pts  |   
-| MIPS_1-3 - Wikipedia ALU         |   | 20 pts  |   
-| Total                            |   | 50 pts  |
+| MIPS_1-1 - Generic Adder Example | 10  | 10 pts  |    
+| MIPS_1-2 - Textbook ALU          | 14  | 20 pts  |   
+| MIPS_1-3 - Wikipedia ALU         | 14  | 20 pts  |   
+| Total                            | 38  | 50 pts  |
 
 NOTE: MIPS_1-4 will be graded separately and will be worth 50 points as well. 
 
